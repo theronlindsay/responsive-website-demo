@@ -4,6 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <!-- Tell browsers and extensions that this site supports both light and dark modes -->
+  <meta name="color-scheme" content="dark light">
+  <!-- Flag for dark mode extensions to know the site has its own dark mode -->
+  <meta name="theme-color" content="#1a2f0a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f0f4ed" media="(prefers-color-scheme: light)">
   <title>LiveLab 4 Demo</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -12,7 +17,7 @@
   <!-- Header section -->
   <header class="header">
     <!-- Logo -->
-    <div class="logo">Castaway</div>
+    <div class="logo">GreenGlider</div>
     <!-- Hamburger menu button for mobile view -->
     <button class="hamburger" id="hamburger">
       ☰
@@ -24,34 +29,49 @@
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
+    <!-- Dark mode toggle button -->
+    <button class="dark-mode-toggle" id="dark-mode-toggle">🌙</button>
   </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Discover <span class="highlight">Sustainable</span> Adventures</h1>
+      <p class="hero-subtitle">Experience the world's most beautiful destinations while protecting our planet for future generations
+      </p>
+      <button class="cta-button">Start Your Journey</button>
+    </div>
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+    </div>
+  </section>
 
   <!-- Card Section -->
   <section class="card-section">
     <!-- Card 1 -->
     <div class="card">
-      <img src="destination1.jpg" alt="Destination 1" class="card-image">
+      <img src="Images/CostaRica.png" alt="Destination 1" class="card-image">
       <div class="card-content">
-        <h3>Costa Rica</h3>
+        <h3><span class="icon">🌴</span> Costa Rica</h3>
         <p>Enjoy this beautiful nature resort. Countless species of animals and plants create a breathtaking experience. The water nearby creates a great place to relax by the beach.</p>
       </div>
     </div>
 
     <!-- Card 2 -->
     <div class="card">
-      <img src="destination2.jpg" alt="Destination 2" class="card-image">
+      <img src="Images/Santorini.png" alt="Destination 2" class="card-image">
       <div class="card-content">
-        <h3>Destination 2</h3>
+        <h3><span class="icon">🏝️</span> Santorini</h3>
         <p>Discover the charm of Destination 2, a perfect getaway for relaxation and adventure.</p>
       </div>
     </div>
 
     <!-- Card 3 -->
     <div class="card">
-      <img src="destination3.jpg" alt="Destination 3" class="card-image">
+      <img src="Images/Bali.jpg" alt="Destination 3" class="card-image">
       <div class="card-content">
-        <h3>Destination 3</h3>
-        <p>Experience the wonders of Destination 3, a place full of history and natural beauty.</p>
+        <h3><span class="icon">🌴</span> Bali</h3>
+        <p>Immerse yourself in the serene beauty of Bali, known for its lush greenery, tranquil beaches, and vibrant culture. A perfect destination for relaxation and adventure.</p>
       </div>
     </div>
   </section>
