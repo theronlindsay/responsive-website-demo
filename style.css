@@ -1,0 +1,118 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General styles for the body */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Modern and clean font */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f9f6; /* Light eco-friendly background */
+  color: #2c3e50; /* Darker text for better readability */
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  flex-direction: column; /* Stack items vertically by default (mobile-first) */
+  align-items: center;
+  background-color: #e8f5e9; /* Soft green background for eco-friendly feel */
+  padding: 10px;
+  border-bottom: 2px solid #a5d6a7; /* Subtle green border */
+}
+
+/* Logo styles */
+.logo {
+  font-size: 28px; /* Slightly larger font for emphasis */
+  font-weight: 600; /* Bold for prominence */
+  color: #388e3c; /* Deep green for eco-friendly branding */
+  margin-bottom: 10px; /* Add space between logo and nav links */
+}
+
+/* Navigation bar styles */
+.nav {
+  display: flex;
+  flex-direction: column; /* Stack links vertically by default */
+  gap: 10px; /* Add space between links */
+}
+
+/* Navigation link styles */
+.nav a {
+  text-decoration: none;
+  color: #2c3e50; /* Dark text for contrast */
+  font-size: 18px;
+  padding: 8px 12px; /* Slightly larger padding for better clickability */
+  border-radius: 5px;
+  background-color: #c8e6c9; /* Light green background for links */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #81c784; /* Darker green on hover */
+  color: #ffffff; /* White text for contrast */
+}
+
+/* Card Section Styles */
+.card-section {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically by default (mobile-first) */
+  gap: 20px; /* Add space between cards */
+  padding: 20px;
+  background-color: #f5f9f6; /* Light background for the section */
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* Stack image and content vertically */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays within the card */
+  background-color: #ffffff; /* White background for the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card-image {
+  width: 100%; /* Make image take full width of the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-content {
+  padding: 15px; /* Add padding inside the card */
+  text-align: center; /* Center-align text */
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  color: #2c3e50; /* Dark text for contrast */
+}
+
+.card-content p {
+  color: #555; /* Slightly lighter text for description */
+}
+
+/* Styles for larger screens (desktop) */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row; /* Arrange header items in a row */
+    justify-content: space-between; /* Space out logo and nav links */
+    padding: 20px;
+  }
+
+  .nav {
+    flex-direction: row; /* Arrange links in a row */
+    gap: 20px; /* Increase space between links */
+  }
+
+  .logo {
+    margin-bottom: 0; /* Remove extra space below logo */
+  }
+
+  .card-section {
+    flex-direction: row; /* Arrange cards in a row */
+    justify-content: space-between; /* Space out cards */
+  }
+
+  .card {
+    flex: 1; /* Allow cards to grow and take equal space */
+    max-width: 30%; /* Limit card width */
+  }
+}
